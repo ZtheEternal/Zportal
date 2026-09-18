@@ -466,7 +466,7 @@ body {
 
 @media (max-width: 760px) {
   .deck {
-    touch-action: pan-x;
+    touch-action: pan-y;
   }
 
   .intro-grid {
