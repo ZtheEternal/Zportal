@@ -10,48 +10,163 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <main class="deck" id="deck" aria-label="Dr Z portfolio slides">
-    <section class="slide intro" aria-label="Introduction">
-      <div class="particles logo-particles" aria-hidden="true"><i>DRZ</i><i>DRZ</i><i>DRZ</i><i>DRZ</i><i>DRZ</i><i>DRZ</i></div>
+  <main class="deck" id="deck" aria-label="Dr Z portfolio slides" tabindex="0">
+
+    <section class="slide intro" data-slide="0" aria-label="Introduction">
+      <div class="particles logo-particles" aria-hidden="true">
+        <i>DRZ</i><i>DRZ</i><i>DRZ</i><i>DRZ</i><i>DRZ</i><i>DRZ</i>
+      </div>
+
       <div class="intro-grid">
-        <div class="brand-block reveal"><img class="hero-logo" src="/DRZ.png" alt="DRZ" /><p class="eyebrow">PORTFOLIO / 2026</p></div>
-        <div class="about reveal delay-1">
-          <p class="section-number">01 / ABOUT</p>
-          <h1>Hi, I’m <em>Dr Z.</em></h1>
-          <p>I'm a passionate and ambitious person with experience across <strong>trading, programming, web development, and graphic design.</strong></p>
-          <p>I enjoy exploring new ideas, building projects, and constantly improving my skills. My goal is simple: <strong>keep learning, keep building, and keep moving forward.</strong></p>
-          <div class="email-row"><a class="email-link" href="mailto:drzbusinesss@gmail.com">drzbusinesss@gmail.com</a><button class="copy-btn" id="copyEmail" type="button">COPY</button><span class="copy-message" id="copyMessage" aria-live="polite"></span></div>
+        <div class="brand-block intro-brand reveal">
+          <img class="hero-logo" src="DRZ.png" alt="DRZ logo" draggable="false" />
+          <p class="eyebrow">PORTFOLIO / 2026</p>
+        </div>
+
+        <div class="about intro-copy reveal delay-1">
+          <div class="intro-heading">
+            <p class="section-number">01 / ABOUT</p>
+            <h1>Hi, I’m <em>Dr Z.</em></h1>
+          </div>
+
+          <div class="intro-text">
+            <p class="intro-summary">
+              I'm a passionate and ambitious person with experience across
+              <strong>trading, programming, web development, and graphic design.</strong>
+            </p>
+
+            <p class="intro-details">
+              I enjoy exploring new ideas, building projects, and constantly improving my skills.
+              My goal is simple:
+              <strong>keep learning, keep building, and keep moving forward.</strong>
+            </p>
+          </div>
+
+          <div class="email-row">
+            <a class="email-link" href="mailto:drzbusinesss@gmail.com">
+              drzbusinesss@gmail.com
+            </a>
+            <button class="copy-btn" id="copyEmail" type="button">COPY</button>
+            <span class="copy-message" id="copyMessage" aria-live="polite"></span>
+          </div>
+
           <form class="mail-form" id="mailForm">
             <label for="mailMessage">WRITE ME A MESSAGE</label>
-            <div><textarea id="mailMessage" placeholder="Type your message here..." required></textarea><button class="send-btn" type="submit">SEND <span>↗</span></button></div>
+            <div>
+              <textarea id="mailMessage" placeholder="Type your message here..." required></textarea>
+              <button class="send-btn" type="submit">
+                SEND <span>↗</span>
+              </button>
+            </div>
           </form>
         </div>
       </div>
+
       <p class="scroll-hint">SWIPE OR SCROLL TO EXPLORE <span>→</span></p>
     </section>
 
-    <section class="slide social x-slide" aria-label="X profile">
-      <div class="particles platform-particles logo-particles" aria-hidden="true"><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i></div>
-      <div class="social-inner reveal"><p class="section-number">02 / SOCIAL</p><div class="platform-icon x-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt="X logo"></div><h2>Find me on <em>X</em></h2><p>Thoughts, updates, and the journey in real time.</p><a class="platform-button external-link" href="https://x.com/drztrader" target="_blank" rel="noopener">CLICK HERE <span>↗</span></a></div>
+    <section class="slide social x-slide" data-slide="1" aria-label="X profile">
+      <div class="particles platform-particles logo-particles" aria-hidden="true">
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt=""></i>
+      </div>
+
+      <div class="social-inner reveal">
+        <p class="section-number">02 / SOCIAL</p>
+        <div class="platform-icon x-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" alt="X logo">
+        </div>
+        <h2>Find me on <em>X</em></h2>
+        <p>Thoughts, updates, and the journey in real time.</p>
+        <a class="platform-button external-link" href="https://x.com/drztrader" target="_blank" rel="noopener">
+          CLICK HERE <span>↗</span>
+        </a>
+      </div>
     </section>
 
-    <section class="slide social discord-slide" aria-label="Discord profile">
-      <div class="particles platform-particles logo-particles" aria-hidden="true"><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i></div>
-      <div class="social-inner reveal"><p class="section-number">03 / COMMUNITY</p><div class="platform-icon discord-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt="Discord logo"></div><h2>Let's connect on <em>Discord</em></h2><p>Join the conversation and stay connected.</p><a class="platform-button external-link" href="https://discord.com/users/1439626746294178014" target="_blank" rel="noopener">CLICK HERE <span>↗</span></a></div>
+    <section class="slide social discord-slide" data-slide="2" aria-label="Discord profile">
+      <div class="particles platform-particles logo-particles" aria-hidden="true">
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt=""></i>
+      </div>
+
+      <div class="social-inner reveal">
+        <p class="section-number">03 / COMMUNITY</p>
+        <div class="platform-icon discord-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" alt="Discord logo">
+        </div>
+        <h2>Let's connect on <em>Discord</em></h2>
+        <p>Join the conversation and stay connected.</p>
+        <a class="platform-button external-link" href="https://discord.com/users/1439626746294178014" target="_blank" rel="noopener">
+          CLICK HERE <span>↗</span>
+        </a>
+      </div>
     </section>
 
-    <section class="slide social telegram-slide" aria-label="Telegram profile">
-      <div class="particles platform-particles logo-particles" aria-hidden="true"><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i><i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i></div>
-      <div class="social-inner reveal"><p class="section-number">04 / CONTACT</p><div class="platform-icon telegram-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt="Telegram logo"></div><h2>Message me on <em>Telegram</em></h2><p>For a direct line, news, and more.</p><a class="platform-button external-link" href="https://t.me/drztrader" target="_blank" rel="noopener">CLICK HERE <span>↗</span></a></div>
+    <section class="slide social telegram-slide" data-slide="3" aria-label="Telegram profile">
+      <div class="particles platform-particles logo-particles" aria-hidden="true">
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i>
+        <i><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt=""></i>
+      </div>
+
+      <div class="social-inner reveal">
+        <p class="section-number">04 / CONTACT</p>
+        <div class="platform-icon telegram-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" alt="Telegram logo">
+        </div>
+        <h2>Message me on <em>Telegram</em></h2>
+        <p>For a direct line, news, and more.</p>
+        <a class="platform-button external-link" href="https://t.me/drztrader" target="_blank" rel="noopener">
+          CLICK HERE <span>↗</span>
+        </a>
+      </div>
     </section>
 
-    <section class="slide social trust-slide" aria-label="Trust channel">
-      <div class="particles platform-particles" aria-hidden="true"><i>✦</i><i>✦</i><i>✦</i><i>✦</i><i>✦</i><i>✦</i></div>
-      <div class="social-inner reveal"><p class="section-number">05 / TRUST</p><div class="platform-icon trust-icon">🤝</div><h2>Trust is <em>earned.</em></h2><p>Visit my Telegram channel for proof and transparency.</p><a class="platform-button external-link" href="https://t.me/drztrust" target="_blank" rel="noopener">VIEW CHANNEL <span>↗</span></a></div>
+    <section class="slide social trust-slide" data-slide="4" aria-label="Trust channel">
+      <div class="particles platform-particles" aria-hidden="true">
+        <i>✦</i><i>✦</i><i>✦</i><i>✦</i><i>✦</i><i>✦</i>
+      </div>
+
+      <div class="social-inner reveal">
+        <p class="section-number">05 / TRUST</p>
+        <div class="platform-icon trust-icon">🤝</div>
+        <h2>Trust is <em>earned.</em></h2>
+        <p>Visit my Telegram channel for proof and transparency.</p>
+        <a class="platform-button external-link" href="https://t.me/drztrust" target="_blank" rel="noopener">
+          VIEW CHANNEL <span>↗</span>
+        </a>
+      </div>
     </section>
   </main>
-  <nav class="navigation" aria-label="Slide navigation"><button id="previous" aria-label="Previous page">←</button><div class="progress" id="progress" aria-label="Page 1 of 5"><span class="active"></span><span></span><span></span><span></span><span></span></div><button id="next" aria-label="Next page">→</button></nav>
+
+  <nav class="navigation" aria-label="Slide navigation">
+    <button id="previous" aria-label="Previous page">←</button>
+
+    <div class="progress" id="progress" aria-label="Page 1 of 5">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <button id="next" aria-label="Next page">→</button>
+  </nav>
+
   <script src="script.js"></script>
 </body>
 </html>
