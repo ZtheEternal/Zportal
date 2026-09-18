@@ -544,7 +544,7 @@ body {
   }
 
   .scroll-hint {
-    bottom: 8.5vh;
+    bottom: calc(3vh + 70px);
     left: 50%;
     font-size: 8px;
     white-space: nowrap;
